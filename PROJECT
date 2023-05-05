@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v3
 projectName: kube-demo
 repo: xyb.customxxx/kube-demo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: xyb.customxxx
+  group: test
+  kind: KubeDemo
+  path: xyb.customxxx/kube-demo/api/v1
+  version: v1
 version: "3"

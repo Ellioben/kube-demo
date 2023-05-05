@@ -1,0 +1,31 @@
+# permissions for end users to edit kubedemoes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: kubedemo-editor-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: kube-demo
+    app.kubernetes.io/part-of: kube-demo
+    app.kubernetes.io/managed-by: kustomize
+  name: kubedemo-editor-role
+rules:
+- apiGroups:
+  - test.xyb.customxxx
+  resources:
+  - kubedemoes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - test.xyb.customxxx
+  resources:
+  - kubedemoes/status
+  verbs:
+  - get

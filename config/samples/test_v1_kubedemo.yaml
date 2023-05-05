@@ -1,0 +1,12 @@
+apiVersion: test.xyb.customxxx/v1
+kind: KubeDemo
+metadata:
+  labels:
+    app.kubernetes.io/name: kubedemo
+    app.kubernetes.io/instance: kubedemo-sample
+    app.kubernetes.io/part-of: kube-demo
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: kube-demo
+  name: kubedemo-sample
+spec:
+  # TODO(user): Add fields here
