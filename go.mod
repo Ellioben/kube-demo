@@ -1,4 +1,4 @@
-module xyb.custom/kube-demo
+module xyb.customxxx/kube-demo
 
 go 1.19
 

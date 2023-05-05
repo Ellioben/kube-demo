@@ -2,9 +2,9 @@
 # This file is used to track the info used to scaffold your project
 # and allow the plugins properly work.
 # More info: https://book.kubebuilder.io/reference/project-config.html
-domain: xyb.custom
+domain: xyb.customxxx
 layout:
 - go.kubebuilder.io/v3
 projectName: kube-demo
-repo: xyb.custom/kube-demo
+repo: xyb.customxxx/kube-demo
 version: "3"
